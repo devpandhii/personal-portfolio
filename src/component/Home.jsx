@@ -18,7 +18,7 @@ const Home = () => {
                     </button>
                 </div>
             </div>
-            <div className='ml-3'>
+            <div className='ml-6'>
                 <img src={HeroImage} alt='My Profile' className='flex mx-auto w-2/3 md:w-full rounded-2xl'/>
             </div>
         </div>

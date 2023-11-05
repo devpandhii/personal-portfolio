@@ -1,6 +1,7 @@
-import Home from "./component/Home";
 import NavBar from "./component/NavBar";
+import Home from "./component/Home";
 import SocialLinks from "./component/SocialLinks";
+import About from "./component/About";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
     <NavBar/>
     <Home/>  
     <SocialLinks/>
+    <About/>
     </div>
   );
 }

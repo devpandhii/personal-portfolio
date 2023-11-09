@@ -1,6 +1,7 @@
 import React from 'react'
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
 import HeroImage from '../assets/heroImage.JPG'
+import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
@@ -8,14 +9,14 @@ const Home = () => {
         <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
             <div className='flex flex-col justify-center h-full'>
                 <h2 className='text-4xl sm:text-7xl font-bold text-white'>I'm Full Stack Developer</h2>
-                <p className='text-gray-500 py-4 max-w-md'>A passionate and driven, Computer Engineering student, eager to apply technical skills and gain hands-on experience in the industry. Currently pursuing a Bachelor's degree in Computer Science and Engineering (IOT and Cybersecurity with Block Chain Technology) with a focus on programming languages and software development. </p>
+                <p className='text-white text-lg py-4 max-w-md'>A passionate and driven, Computer Engineering student, eager to apply technical skills and gain hands-on experience in the industry. Currently pursuing a Bachelor's degree in Computer Science and Engineering (IOT and Cybersecurity with Block Chain Technology) with a focus on programming languages and software development. </p>
                 <div>
-                    <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
-                        Portfolio
+                    <Link to='experience' smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                        Experience
                         <span chidren className='group-hover:rotate-90 duration-300'>
                             <MdOutlineKeyboardArrowRight size={25}/>
                         </span>
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className='ml-6'>

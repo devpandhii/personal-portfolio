@@ -3,11 +3,13 @@ import html from '../assets/html.png'
 import css from '../assets/css.png'
 import javascript from '../assets/javascript.png'
 import react from '../assets/react.png'
-import nextjs from '../assets/nextjs.png'
-import graphql from '../assets/graphql.png'
+// import nextjs from '../assets/nextjs.png'
+// import graphql from '../assets/graphql.png'
 import node from '../assets/node.png'
 import github  from '../assets/github.png'
 import tailwind  from '../assets/tailwind.png'
+import mongo from '../assets/mongo.png'
+import figma from '../assets/figma.png'
 const Experience = () => {
 
     const experience = [
@@ -36,45 +38,59 @@ const Experience = () => {
             style: 'shadow-cyan-500',
         },
         {
-            id: 5,
-            technologies: 'Node',
-            src: node,
-            style: 'shadow-green-500',
-        },
-        {
-            id: 6,
-            technologies: 'Next JS',
-            src: nextjs,
-            style: 'shadow-white',
-        },
-        {
             id: 7,
             technologies: 'GitHub',
             src: github,
             style: 'shadow-white',
         },
         {
+            id: 5,
+            technologies: 'Node',
+            src: node,
+            style: 'shadow-green-500',
+        },
+        // {
+        //     id: 6,
+        //     technologies: 'Next JS',
+        //     src: nextjs,
+        //     style: 'shadow-white',
+        // },
+        
+        {
             id: 8,
+            technologies: 'MongoDB',
+            src: mongo,
+            style: 'shadow-green-900',
+        },
+        {
+            id: 9,
             technologies: 'Tailwind',
             src: tailwind,
             style: 'shadow-cyan-300',
         },
         {
-            id: 9,
-            technologies: 'GraphQl',
-            src: graphql,
-            style: 'shadow-pink-500',
+            id: 10,
+            technologies: 'Figma',
+            src: figma,
+            style: 'shadow-white',
         },
+        // {
+        //     id: 11,
+        //     technologies: 'GraphQl',
+        //     src: graphql,
+        //     style: 'shadow-pink-500',
+        // },
+        
     ]
 
     return (
-    <div name="experience" className='bg-gradient-to-b from-gray-800 to-black w-full h-screen'>
+    <div name="experience" className='bg-gradient-to-b from-black to-gray-800 w-full h-screen'>
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full text-white'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 border-gray-500'>
                     Experience
                 </p>
-                <p className='text-xl py-6'>
+                <p className='text-xl py-6'> 
                     These are the technologies I've worked with.
                 </p>
             </div>

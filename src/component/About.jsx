@@ -13,14 +13,14 @@ const About = () => {
           </p>
         </div>
 
-        <p className="text-xl mt-20">
-        Passionate and driven Computer Engineering student eager to apply technical skills and gain hands-on experience in the industry. Currently pursuing a Bachelor's degree in Computer Science and Engineering (IOT and Cybersecurity with Block Chain Technology) with a focus on programming languages and software development. Skilled in Java, Python, and C++. Interested in exploring areas such as web development, artificial intelligence, and cybersecurity. Proactive team player with strong communication and problem-solving skills. Seeking opportunities to learn and grow as a computer engineer.
+        <p className="text-xl mt-20 text-justify">
+          Passionate and driven Computer Engineering student eager to apply technical skills and gain hands-on experience in the industry. Currently pursuing a Bachelor's degree in Computer Science and Engineering (IOT and Cybersecurity with Blockchain Technology) with a focus on programming languages and software development. Skilled in Java, Python, and C++. Interested in exploring areas such as web development, artificial intelligence, and cybersecurity. Proactive team player with strong communication and problem-solving skills. Seeking opportunities to learn and grow as a computer engineer.
         </p>
 
         <br />
 
-        <p className="text-xl">        
-           Passionate badminton player, chess enthusiast, and hackathon participant. These extracurricular activities have taught me the importance of strategic thinking, focus, and problem-solving. I thrive on competition and enjoy pushing myself to new heights. Excited to bring this same level of enthusiasm and dedication to my professional journey.
+        <p className="text-xl text-justify">
+          Passionate badminton player, chess enthusiast, and hackathon participant. These extracurricular activities have taught me the importance of strategic thinking, focus, and problem-solving. I thrive on competition and enjoy pushing myself to new heights. Excited to bring this same level of enthusiasm and dedication to my professional journey.
         </p>
       </div>
     </div>

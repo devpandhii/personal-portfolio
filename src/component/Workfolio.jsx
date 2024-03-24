@@ -2,10 +2,6 @@ import React from 'react'
 import chatApp from '../assets/portfolio/chatApp.png'
 import food from '../assets/portfolio/food.png'
 import tastyWaves from '../assets/portfolio/tastyWaves.png'
-// import reactParallax from '../assets/portfolio/arrayDestruct.jpg'
-// import reactSmooth from '../assets/portfolio/reactSmooth.jpg'
-// import reactWeather from '../assets/portfolio/reactWeather.jpg'
-// import usestate from '../assets/portfolio/usestate.jpg'
 
 const Workfolio = () => {
 
@@ -27,28 +23,12 @@ const Workfolio = () => {
             src: food,
             demoLink: 'https://food200.onrender.com/',
             codeLink: 'https://github.com/devpandhii/Error404',
-        },
-        // {
-        //     id: 4,
-        //     src: reactParallax,
-        // },
-        // {
-        //     id: 5,
-        //     src: reactSmooth,
-        // },
-        // {
-        //     id: 6,
-        //     src: reactWeather,
-        // },
-        // {
-        //     id: 7,
-        //     src: usestate,
-        // },
+        }
     ]
 
     return (
-        <div name="workfolio" className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen'>
-            <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
+        <div name="workfolio" className='flex items-center justify-center bg-gradient-to-b from-black to-gray-800 w-full text-white' style={{ minHeight: "100vh" }} >
+            <div className='max-w-screen-lg p-4 mx-auto'>
                 <div className='pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>
                         Workfolio
@@ -57,24 +37,20 @@ const Workfolio = () => {
                         Check out some of my work here.
                     </p>
                 </div>
-                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-
-
-                    {
-                        workfolio.map(({ id, src, demoLink, codeLink }) => (
-                            <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-                                <img src={src} alt='' className='rounded-md duration-200 hover:scale-105' />
-                                <div className='flex items-center justify-center'>
-                                    <a href={demoLink} className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
-                                        Demo
-                                    </a>
-                                    <a href={codeLink} className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
-                                        Code
-                                    </a>
-                                </div>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4'>
+                    {workfolio.map(({ id, src, demoLink, codeLink }) => (
+                        <div key={id} className='flex flex-col justify-between items-center bg-gray-700 rounded-lg p-4'>
+                            <img src={src} alt='' className='w-full rounded-md mb-4' />
+                            <div className='flex justify-around w-full'>
+                                <a href={demoLink} className='w-1/2 px-6 py-3 text-center rounded-md bg-blue-500 hover:bg-blue-600 text-white'>
+                                    Demo
+                                </a>
+                                <a href={codeLink} className='w-1/2 px-6 py-3 text-center rounded-md bg-blue-500 hover:bg-blue-600 text-white'>
+                                    Code
+                                </a>
                             </div>
-                        ))
-                    }
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
